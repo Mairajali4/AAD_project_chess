@@ -12,8 +12,8 @@ public class Rook extends Piece {
         super(white);
     }
 
+    @Override
     public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates, Position[][] board) {
-
         ArrayList<Coordinates> allowedMoves = new ArrayList<>();
         allowedMoves.clear();
         Coordinates c ;
@@ -72,7 +72,6 @@ public class Rook extends Piece {
 
 
 
-
-        return allowedMoves;
+       return allowedMoves;
     }
 }

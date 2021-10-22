@@ -14,7 +14,8 @@ public class Bishop extends Piece {
     }
 
 
-    public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates, Position[][] board) {
+    @Override
+    public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates,Position[][] board) {
         ArrayList<Coordinates> allowedMoves = new ArrayList<>();
         Coordinates c;
 
@@ -82,7 +83,8 @@ public class Bishop extends Piece {
         }
 
 
-
-        return allowedMoves;
+    return allowedMoves;
     }
+
+
 }

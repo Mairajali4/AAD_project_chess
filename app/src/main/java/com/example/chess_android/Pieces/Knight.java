@@ -11,7 +11,9 @@ public class Knight extends Piece {
     public Knight(boolean white) {
         super(white);
     }
-     public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates , Position[][] board) {
+
+    @Override
+    public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates, Position[][] board) {
         ArrayList<Coordinates> allowedMoves = new ArrayList<>();
         allowedMoves.clear();
         Coordinates c;
@@ -111,9 +113,8 @@ public class Knight extends Piece {
                 }
             }
         }
-
-
-
         return allowedMoves;
+
+
     }
 }

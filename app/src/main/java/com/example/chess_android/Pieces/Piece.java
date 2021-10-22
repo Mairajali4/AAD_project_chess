@@ -3,11 +3,12 @@ package com.example.chess_android.Pieces;
 import android.icu.text.Transliterator;
 
 import com.example.chess_android.Coordinates;
+import com.example.chess_android.Position;
 
 import java.util.ArrayList;
 
 
-public class Piece {
+public abstract class Piece {
 
     private boolean white;
 
@@ -30,4 +31,6 @@ public class Piece {
     public boolean isWhite() {
         return white;
     }
+
+    public abstract ArrayList<Coordinates> AllowedMoves(Coordinates coordinates, Position[][] board);
 }

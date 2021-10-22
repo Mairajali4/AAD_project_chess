@@ -1,5 +1,7 @@
 package com.example.chess_android.Pieces;
 
+import android.icu.text.Transliterator;
+
 import com.example.chess_android.Coordinates;
 import com.example.chess_android.Position;
 
@@ -12,7 +14,6 @@ public class Queen extends Piece {
 
     @Override
     public ArrayList<Coordinates> AllowedMoves(Coordinates coordinates, Position[][] board) {
-
         ArrayList<Coordinates> allowedMoves = new ArrayList<>();
         Coordinates c;
         allowedMoves.clear();
@@ -133,7 +134,8 @@ public class Queen extends Piece {
             }
         }
 
-
+        //check locations at board
+        //work on the coordinates and return the allowed moves
 
         return allowedMoves;
     }
